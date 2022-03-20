@@ -4,6 +4,7 @@ function compute()
     if(principal<=0)
     {
         alert("Enter a positive number");
+        document.getElementById("principal").focus();
         return false;
     }
     var rate=document.getElementById("rate").value;
@@ -22,12 +23,4 @@ function updateRate()
         output.innerHTML=this.value;
     }
 }
-function validatep()
-{
-    var principal_v=document.myform.principal.value;
-    if(principal_v<=0)
-    {
-        alert("Principal cannot be negative or zero");
-        return false;
-    }
-}
+
